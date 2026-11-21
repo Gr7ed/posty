@@ -87,7 +87,12 @@ function renderLayout(title, body) {
         </ul>
       </nav>
     </header>
-    <main>${body}</main>
+    <main>
+    <h1 class='sr-only'>${title}</h1>
+    
+    ${body}
+     
+    </main>
     <footer><p>Built with Love · <a href='/'>Posty</a></p></footer>
     <script src='/script.js' defer></script>
   </body>
